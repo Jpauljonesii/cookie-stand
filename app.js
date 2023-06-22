@@ -1,78 +1,75 @@
 'use strict';
-let username = prompt('What is your name?');
-let greeting = document.querySelector ('.greeting');
-greeting.textContent= `Hi ${username}, welcome to Pat's Salmon Cookies.`;
-
-const hoursOpen = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
+const hoursOpen = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
 const Seattle = {
   location: 'Seattle',
-  maxCust: 65,
   minCust: 23,
+  maxCust: 65,
   avgSale: 6.3,
-  randomNumofCustomers: function () {
-    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+  randomNumberOfCustomers: function () {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.maxCust);
   }
 };
 const Tokyo = {
   location: 'Tokyo',
-  maxCust: 24,
   minCust: 3,
+  maxCust: 24,
   avgSale: 1.2,
-  randomNumofCustomers: function () {
-    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+  randomNumberOfCustomers: function () {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.maxCust);
   }
 };
 const Dubai = {
   location: 'Dubai',
-  maxCust: 38,
   minCust: 11,
+  maxCust: 38,
   avgSale: 3.7,
-  randomNumofCustomers: function () {
-    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+  randomNumberOfCustomers: function () {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.maxCust);
   }
 };
 const Paris = {
   location: 'Paris',
-  maxCust: 38, 
-  minCust: 20, 
+  minCust: 20,
+  maxCust: 38,
   avgSale: 2.3,
-  randomNumofCustomers: function () {
-    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+  randomNumberOfCustomers: function () {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.maxCust);
   }
 };
 const Lima = {
   location: 'Lima',
-  maxCust: 16, 
-  minCust: 2, 
+  minCust: 2,
+  maxCust: 16,
   avgSale: 4.6,
-  randomNumofCustomers: function () {
-    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
+  randomNumberOfCustomers: function () {
+    return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.maxCust);
   }
 };
 
 
-function cookieCount(city){
+function cookieCount(city) {
   let h2 = document.createElement('h2');
-  h2.innerText = city.name;
+  h2.innerText = city.location;
   let main = document.getElementById('cities');
   main.appendChild(h2);
   let ul = document.createElement('ul');
   main.appendChild(ul);
   let totalSales = 0;
-  for (let i=0; i <= hoursOpen.length; i++){
+  for (let i = 0; i < hoursOpen.length; i++) {
     let li = document.createElement('li');
-    let hourlySales = Math.floor(city.randomNumofCustomers() * city.avgCookieSales);
+    let hourlySales = Math.floor(
+      city.randomNumberOfCustomers() * city.avgSale
+    );
     totalSales += hourlySales;
-    li.innerText = totalSales;
+    console.log(totalSales);
+    li.innerText = `${hoursOpen[i]}: ${hourlySales} cookies`;
     ul.appendChild(li);
   }
   let total = document.createElement('li');
   total.innerText = `Total: ${totalSales} cookies`;
   ul.appendChild(total);
 }
-
-
 
 cookieCount(Seattle);
 cookieCount(Tokyo);

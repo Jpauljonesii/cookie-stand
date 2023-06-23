@@ -1,3 +1,4 @@
 # cookie-stand
 
-![image]("C:\Users\johnt\OneDrive\Pictures\codex\2023-cookiestand.png")
+![image](https://github.com/Jpauljonesii/cookie-stand/assets/131941162/01f927f8-ee6b-4411-8648-23e58763a902)
+

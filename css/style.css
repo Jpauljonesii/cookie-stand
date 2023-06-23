@@ -2,6 +2,7 @@ h2 {
   font-family: 'Anton', sans-serif;
   color:blue;
 margin-bottom: 10px;
+margin-top: 10px;
 text-align: center;
 
 }
@@ -14,12 +15,14 @@ text-align: center;
 }
 
 #cities {
-font-family: Arial;
+font-family: Arial, Helvetica, sans-serif;
 color: blueviolet;
+text-align: center;
+
 }
 
 p {
-font-family: Georgia;
+font-family: Georgia, 'Times New Roman', Times, serif;
 color: dodgerblue;
 margin-bottom: 10px;
 text-align: center;

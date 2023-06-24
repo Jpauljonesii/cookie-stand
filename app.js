@@ -19,7 +19,7 @@ let Tokyo = new City('Tokyo', 3, 24, 1.2);
 let Dubai = new City('Dubai', 11, 38, 3.7);
 let Paris = new City('Paris', 20, 38, 2.3);
 let Lima = new City('Lima', 2, 16, 4.6);
-const allCities = [Seattle, Tokyo, Dubai, Paris, Lima];
+
 let headerRow = document.createElement('tr');
 table.appendChild(headerRow);
 let tableBody = document.createElement('tbody');

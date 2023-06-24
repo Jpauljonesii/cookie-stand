@@ -70,8 +70,8 @@ function footerFunction() {
   let tr = document.createElement('tr');
   tfoot.appendChild(tr);
   tr.appendChild(td);
-  const totalOfTotals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-  for (let i = 0; i < 14; i++){
+  const totalOfTotals = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  for (let i = 0; i < 15; i++){
     for (let j = 0; j < cityArray.length; j++){
       totalOfTotals[i] += cityArray[j][i];
     }

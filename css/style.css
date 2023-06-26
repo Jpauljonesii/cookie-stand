@@ -62,7 +62,7 @@ main {
 }
 
 #sales {
-  text-align: left;
+  text-align: center;
 }
 
 #footer {
@@ -93,4 +93,19 @@ main {
 body {
   align-items: center;
   flex-direction: column;
+}
+
+td {
+  border: 1px solid black;
+  width: 200px;
+  text-align: center;
+}
+
+table {
+  border: solid black;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid black;
 }

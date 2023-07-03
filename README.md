@@ -12,3 +12,5 @@
 =======
 >>>>>>> 20402b9 (updated readme)
 ![image](https://github.com/Jpauljonesii/cookie-stand/assets/131941162/b6cd771d-1fac-4d41-9833-c62367147916)
+
+![image](https://github.com/Jpauljonesii/cookie-stand/assets/131941162/a5be7690-43aa-42d5-8469-cbe51b475b98)
